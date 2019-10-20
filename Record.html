@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -10,6 +15,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to left,#8942a8, #ba382f);
+
 }
 .flip-card {
     background-color: transparent;
@@ -25,7 +32,7 @@ body {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,255,0,0.2);
   }
 
   .flip-card:hover .flip-card-inner {
@@ -45,7 +52,7 @@ body {
   }
 
   .flip-card-back {
-    background-color: #2980b9;
+    background-color: #8942a8;
     color: white;
     transform: rotateY(180deg);
   }
@@ -84,12 +91,66 @@ body {
 }
 
 .fa {font-size:50px;}
+h1{
+  color: linear-gradient(to left,#8942a8, #ba382f);
+  animation: anima 3s steps(22) infinite;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family: monospace;
+}
+h2{
+  /*margin-right: 30%;*/
+  animation: anima 3s steps(22) infinite;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family: monospace;
+}
+p{
+ 
+  animation: type 3s steps(22) infinite;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family: monospace;
+  border-right: 4px solid ;
+}
+@keyframes anima{
+  0%{
+    transform: rotateY(90deg) ;
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100%{
+    transform: rotateY(0deg);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@keyframes type{
+  0%{
+    width:0ch;
+    
+  }
+  100%{
+    width:27ch;
+  }
+}
 </style>
 </head>
 <body>
-
-<h2>Responsive Section Counter</h2>
-<p>Hover on image to know the record.</p>
+<div class="w3-top">
+    <div  class="w3-bar  w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="Record.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RECORD</a>
+      <a href="Nomercy.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NOMERCY</a>
+      <a href="Tournament.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOURNAMENT</a>
+      <a href="Upcoming.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">UPCOMING TOURNAMENT</a>
+      <a href="https://www.facebook.com/spasari" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    </div>
+  </div>
+  <br>
+  <br>
+<h1>Hover on image to know the record!!</h1>
 <br>
 
 <div class="row">
@@ -100,9 +161,9 @@ body {
             <img src="Dhruv.jpg" alt="Avatar" style="width:200px;height:200px;">
           </div>
           <div class="flip-card-back">
-            <h1>Dhruv Rana</h1> 
-            <p>Software Engineer</p> 
+            <h2>Dhruv Rana</h2> 
             <p>Most Consecutive Wins - 8</p>
+            <p>Most Consecutive Loss - 7</p>
         </div>
       </div>
     </div>
@@ -112,13 +173,13 @@ body {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="Hirendra.jpg" alt="Hirendra Singh" style="width:250px;height:250px;">
+            <img src="Hirendra.jpg" alt="Hirendra Singh" style="width:200px;height:200px;">
           </div>
           <div class="flip-card-back">
-            <h1>Hirendra</h1> 
-            <p>Network Admistrator</p> 
+            <h2>Hirendra</h2> 
             <p>Most Consecutive Wins - 8</p>
             <p>Max coin covered in one strike - 4</p>
+            <p>6- 4 with me</p>
         </div>
       </div>
     </div>
@@ -128,11 +189,12 @@ body {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="Dhruv.jpg" alt="Avatar" style="width:200px;height:200px;">
+            <img src="1.jpg" alt="Avatar" style="width:200px;height:200px;">
           </div>
           <div class="flip-card-back">
-            <h1>John Doe</h1> 
-            <p>Architect & Engineer</p> 
+
+            <h2>Vineet</h2> 
+            <p>6- 4 with me</p>
             <p>We love that guy</p>
         </div>
       </div>
@@ -143,12 +205,77 @@ body {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="Dhruv.jpg" alt="Avatar" style="width:200px;height:200px;">
+            <img src="2.jpg" alt="Avatar" style="width:200px;height:200px;">
           </div>
           <div class="flip-card-back">
-            <h1>John Doe</h1> 
-            <p>Architect & Engineer</p> 
+            <h2>Shrey Pasari</h2>
             <p>We love that guy</p>
+            <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="3.jpg" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Aditya(Adi)</h1> 
+            <p>We love that guy</p>
+            <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="1.jpg" alt="Hirendra Singh" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Aditya(Tukka)</h1> 
+            <p>Master of switch shot</p>
+            <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="4.jpeg" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Abhishek </h1> 
+            <p>We love that guy</p>
+            <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="5.jpeg" alt="Avatar" style="width:200px;height:200px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Ankit Nagpal</h1> 
+            <p>We love that guy</p> 
+            <p>6 - 0 with me</p>
         </div>
       </div>
     </div>
